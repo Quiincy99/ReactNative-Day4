@@ -9,10 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import {action, makeObservable, observable} from 'mobx';
-import {inject, observer, Provider} from 'mobx-react';
+import {inject, observer} from 'mobx-react';
 import store from './UserStore';
-import {NavigationContainer} from '@react-navigation/native';
 
 const Edit = ({navigation}: any) => {
 

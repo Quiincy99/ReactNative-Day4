@@ -1,31 +1,15 @@
 import React from 'react';
 import {
-  Alert,
-  Button,
   SafeAreaView,
-  SafeAreaViewComponent,
   ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
-  TextInput,
   TouchableOpacity,
-  useColorScheme,
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-import {action, makeObservable, observable} from 'mobx';
-import {inject, observer, Provider} from 'mobx-react';
+import {inject, observer} from 'mobx-react';
 import store from './UserStore';
-import {NavigationContainer} from '@react-navigation/native';
 
 const Profile = ({navigation}: any) => {
 
