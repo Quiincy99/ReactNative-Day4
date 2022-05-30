@@ -1,0 +1,41 @@
+GET http://localhost:8080/ HTTP/1.1
+
+###
+GET http://localhost:8080/users HTTP/1.1
+
+###
+GET http://localhost:8080/users/78b93724-afc2-49f3-9ba3-fbd5564329ad HTTP/1.1
+
+###
+
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{
+  "UserName": "thieny",
+  "Email": "lam159ss@gmail.com",
+  "Password": "thieny"
+}
+
+###
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{
+  "UserName": "lamduong",
+  "Email": "lam159ss@gmail.com",
+  "Password": "lamduong"
+}
+
+###
+POST http://localhost:8080/users/3703333e-b756-4eeb-8375-1f80de3bcd56 HTTP/1.1
+content-type: application/json
+
+{
+  "UserName": "lamduong12",
+  "Email": "lam159ss@gmail.com",
+  "Password": "lamduong"
+}
+
+###
+DELETE http://localhost:8080/users/c32e63a5-127d-4c5c-87f7-97bd8a1d38f6 HTTP/1.1 
